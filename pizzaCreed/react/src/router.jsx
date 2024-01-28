@@ -29,7 +29,7 @@ const router = createBrowserRouter([
                 element: <UserFrom key="userCreate"/>,
             },
             {
-                path: "/users/:id",
+                path: '/users/:id',
                 element: <UserFrom key="userUpdate" />,
             },
         ],
