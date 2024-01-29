@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\StoreUserRequest;
+use App\Http\Requests\StoreUsersRequest;
 use App\Http\Requests\UpdateUserRequest;
 use App\Http\Resources\UserResource;
 use App\Models\User;
@@ -26,7 +26,7 @@ class UserController extends Controller
      * r
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreUserRequest $request)
+    public function store(StoreUsersRequest $request)
     {
         $data = $request->validated();
         $data['password'] = bcrypt($data['password']);
@@ -50,6 +50,7 @@ class UserController extends Controller
      * Update the specified resource in storage.
      *
      * @param \App\Http\Requests\UpdateUserRequest $request
+     * @param  \App\Http\Requests\UpdateUserRequest
      * @param \App\Models\User                     $user
      * @return \Illuminate\Http\Response
      */
