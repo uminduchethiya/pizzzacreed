@@ -47,7 +47,7 @@ export default function UserForm() {
           }
         })
     } else {
-      axiosClient.post('/users', user)
+        axiosClient.post('/users', user)
         .then(() => {
           setNotification('User was successfully created')
           navigate('/users')
