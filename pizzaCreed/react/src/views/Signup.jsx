@@ -37,7 +37,7 @@ export default function Signup() {
     };
 
     return (
-       
+
 
         <div className="">
             <div className="flex flex-col md:flex-row w-full h-screen">
@@ -69,7 +69,7 @@ export default function Signup() {
                                 ))}
                             </div>
                         )}
-                        <div className="flex flex-col space-y-1 w-[650px] mt-6 mx-10 ">
+                        <div className="flex flex-col space-y-1 md:w-[650px] w-[300px] mt-6 md:mx-10">
                             <label
                                 htmlFor="email"
                                 className="text-sm font-semibold text-gray-500"
@@ -83,7 +83,7 @@ export default function Signup() {
                             />
                         </div>
 
-                        <div className="flex flex-col space-y-1 w-[650px] mt-6 mx-10 ">
+                        <div className="flex flex-col space-y-1 md:w-[650px] w-[300px] mt-6 md:mx-10 ">
                             <label
                                 htmlFor="email"
                                 className="text-sm font-semibold text-gray-500"
@@ -96,7 +96,7 @@ export default function Signup() {
                                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
                             />
                         </div>
-                        <div className="flex flex-col space-y-1 w-[650px] mt-6 mx-10 ">
+                        <div className="flex flex-col space-y-1 md:w-[650px] w-[300px] mt-6 md:mx-10 ">
                             <div className="flex items-center justify-between">
                                 <label
                                     htmlFor="password"
@@ -112,7 +112,7 @@ export default function Signup() {
                             />
                         </div>
 
-                        <div className="flex flex-col space-y-1 w-[650px] mt-6 mx-10 ">
+                        <div className="flex flex-col space-y-1 md:w-[650px] w-[300px] mt-6 md:mx-10">
                             <div className="flex items-center justify-between">
                                 <label
                                     htmlFor="password"
@@ -128,8 +128,8 @@ export default function Signup() {
                             />
                         </div>
 
-                        <div>
-                            <button className="btn btn-block">Signup</button>
+                        <div className="flex flex-col space-y-1 md:w-[600px] w-[250px] mt-6 md:mx-16 mx-5">
+                            <button className="justify-center px-4 py-2 text-lg font-semibold text-white transition-colors duration-300 bg-primaryColor rounded-lg focus:outline-none focus:ring-blue-200 focus:ring-4">Signup</button>
                         </div>
                         <div className="flex flex-col space-y-5">
                             <span className="flex items-center justify-center space-x-2">
