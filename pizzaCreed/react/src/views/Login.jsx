@@ -10,7 +10,7 @@ export default function Login() {
     const passwordRef = createRef();
     const { setUser, setToken } = useStateContext();
     const [message, setMessage] = useState(null);
-    
+
 
     const onSubmit = (ev) => {
         ev.preventDefault();
@@ -56,7 +56,7 @@ export default function Login() {
                     <form
                         onSubmit={onSubmit}
                         action="#"
-                        className="md:bg-transparent md:px-0 md:py-0 bg-orange-50 bg-opacity-75 px-10 py-10 rounded-xl mt-20"
+                        className="md:bg-transparent md:px-0 md:py-0 bg-orange-50 bg-opacity-75 px-10 py-10 rounded-xl"
                     >
                         {message && (
                             <div className="alert">
@@ -64,7 +64,7 @@ export default function Login() {
                             </div>
                         )}
 
-                        <div className="flex flex-col space-y-1 w-[650px] mt-6 mx-10 ">
+                        <div className="flex flex-col space-y-1 md:w-[650px] w-[300px] mt-6 md:mx-10 ">
                             <label
                                 htmlFor="email"
                                 className="text-sm font-semibold text-gray-500"
@@ -77,7 +77,7 @@ export default function Login() {
                                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
                             />
                         </div>
-                        <div className="flex flex-col space-y-1 w-[650px] mt-6 mx-10 ">
+                        <div className="flex flex-col space-y-1 md:w-[650px] w-[300px] mt-6 md:mx-10 ">
                             <div className="flex items-center justify-between">
                                 <label
                                     htmlFor="password"
@@ -99,15 +99,15 @@ export default function Login() {
                             />
                         </div>
 
-                        <div>
+                        <div className=" flex flex-col space-y-1 md:w-[600px] w-[250px] mt-6 md:mx-16 mx-5  ">
                             <button
                                 type="submit"
-                                className=" w-[600px] mt-10  mx-16    justify-center px-4 py-2 text-lg font-semibold text-white transition-colors duration-300 bg-primaryColor rounded-lg focus:outline-none focus:ring-blue-200 focus:ring-4"
+                                className="justify-center px-4 py-2 text-lg font-semibold text-white transition-colors duration-300 bg-primaryColor rounded-lg focus:outline-none focus:ring-blue-200 focus:ring-4"
                             >
                                 Log in
                             </button>
                         </div>
-                        <div className="flex flex-col space-y-5">
+                        <div className="flex flex-col mt-20 space-y-5">
                             <span className="flex items-center justify-center space-x-2">
                                 <span className="h-px bg-gray-400 w-14"></span>
                                 <p className="message">

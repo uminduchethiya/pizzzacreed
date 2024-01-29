@@ -6,7 +6,8 @@ import DefaultLayout from "./components/DefaultLayout";
 import GuestLayout from "./components/GuestLayout";
 import Dashboard from "./views/Dashboard";
 import UserFrom from "./views/UserFrom";
-
+import Products from "./views/Product";
+import  ProductFrom from "./views/ProductForm"
 const router = createBrowserRouter([
     {
         path: "/",
@@ -31,6 +32,19 @@ const router = createBrowserRouter([
             {
                 path: '/users/:id',
                 element: <UserFrom key="userUpdate" />,
+            },
+
+            {
+                path: "/products",
+                element: <Products />,
+            },
+            {
+                path: "/products/new",
+                element: <ProductFrom key="productCreate"/>,
+            },
+            {
+                path: '/products/:id',
+                element: <ProductFrom key="productUpdate" />,
             },
         ],
     },
